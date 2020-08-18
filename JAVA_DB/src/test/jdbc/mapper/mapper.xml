@@ -3,7 +3,7 @@
 
 <mapper namespace="book">
 
-	<select id="bookCount" resultType="int">
+	<select id="bookCount" resultType="test.jdbc.bean.BookDTO">
 	
 		select count(*) from book
 	

@@ -2,6 +2,8 @@ package test.jdbc.bean;
 
 import java.sql.Timestamp;
 
+//mapper returntype에 DTO에 맞춰 적어주면 됨.
+
 public class BookDTO {
 
 	

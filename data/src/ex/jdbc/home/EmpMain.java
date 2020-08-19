@@ -18,6 +18,7 @@ public class EmpMain {
 		for(int i = 0;i <= all.size(); i++) {
 			EmpDTO dto =(EmpDTO)all.get(i);
 			System.out.println(dto.getEmpno() + " - " + dto.getEname()+" - "+ dto.getJob());
+			System.out.println("-----------------");
 			
 		}
 		

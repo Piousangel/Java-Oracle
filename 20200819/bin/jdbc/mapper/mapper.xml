@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="book">
+
+<select id="bookAll" resultType="jdbc.bean.BookDTO">
+		select * from book
+</select>
+
+	<resultMap type="jdbc.bean.BookDTO" id="bookDTO">
+		<result column="num" property="num"/>
+		<result column="id" property="writer"/>
+	</resultMap>
+
+	<select id="bookSelect" resultMap="bookDTO">
+		select * from book
+	</select>
+  
+  	<sql id="whereNum">
+  		where num=#{num}
+  	</sql>
+  
+
+</mapper>
